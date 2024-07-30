@@ -11,5 +11,6 @@ RUN echo "PS1='\[\e[0;32m\]\u@\h \[\e[0;34m\]\W \$\[\e[0m\] '" >> /root/.bashrc
 
 # Set environment variable for color support
 ENV TERM xterm
+ENV GRADLE_USER_HOME /app/.gradle
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
